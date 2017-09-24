@@ -11,12 +11,15 @@
 	<!-- Bootstrap -->
 	<link rel="stylesheet" type="text/css" href="./libs/bootstrap/css/bootstrap.css">
 	<script src="./libs/bootstrap/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+	<!-- Header styles -->
+	<link rel="stylesheet" type="text/css" href="./css/header.css">
 
-	<!-- AngularJS 1.5.x -->
+	<!-- AngularJS 1.4.8 -->
 	<script src="./libs/angularJS/angular.min.js" type="text/javascript" charset="utf-8"></script>
 
 	<!-- Angular UI router -->
 	<script src="./libs/angularJS/angular-ui-router.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="./libs/angularJS/angular-animate.js" type="text/javascript" charset="utf-8"></script>
 
 	<!-- Controllers -->
 	<script src="./globalCntrl.js" type="text/javascript" charset="utf-8" ></script>
@@ -24,10 +27,17 @@
 </head>
 <body ng-app="globalMod">
 	<div ng-controller="globalCntrl as global" class="container-fluid">
-		<div class="text-center">
-			{{global.welcome}}
+		<!-- Header -->
+		<div class="row navbar-fixed-top text-center">
+			<span class="col-xs-12 myName" ng-style="{'background-color': global.bgColor}">Santhosh Gugan</span>
 		</div>
-		<a ui-sref="aboutMe">About Me</a>
+		<!-- <a ui-sref="aboutMe">About Me</a> -->
+		<div class="stickyTab">
+			<div class="stickyNote aboutMe" ng-click="global.headerColor('#c9f1e8')">About Me</div>
+			<div class="stickyNote mySkills" ng-click="global.headerColor('#2ca4ee')">My Skills</div>
+			<div class="stickyNote portfolio" ng-click="global.headerColor('#9924ae')">Portfolio</div>
+			<div class="stickyNote myHobbies" ng-click="global.headerColor('#eea4be')">Hobbies</div>
+		</div>
 		<ui-view></ui-view>
 	</div>
 	

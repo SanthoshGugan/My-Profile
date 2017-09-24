@@ -1,0 +1,40 @@
+.myName{
+	padding: 20px;
+	font-size: 25px;
+	font-weight: 600;
+	background-color: #c9f1e8;
+}
+
+.stickyTab{
+	position: absolute;
+}
+
+.stickyTab .stickyNote{
+	display: block;
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 2px 15px 2px 55px;
+    margin: 10px 0 10px -60px;
+    width: 140px;
+    text-align: right;
+}
+
+
+.stickyTab .stickyNote.aboutMe{
+	background-color: #c9f1e8;
+}
+
+.stickyNote.mySkills{
+	background-color: #2ca4ee;
+}
+
+.stickyNote.portfolio{
+	background-color: #9924ae;
+}
+
+.stickyNote.myHobbies{
+	background-color: #eea4be;
+}
+.stickyNote:hover{
+	width: 175px;
+}
