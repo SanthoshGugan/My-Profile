@@ -24,6 +24,9 @@
 	<!-- Controllers -->
 	<script src="./globalCntrl.js" type="text/javascript" charset="utf-8" ></script>
 	<script src="./modules/aboutMe/aboutMeCntrl.js" type="text/javascript" charset="utf-8" ></script>
+	<script src="./modules/mySkills/mySkillsCntrl.js" type="text/javascript" charset="utf-8" ></script>
+	<script src="./modules/myPortfolio/myPortfolioCntrl.js" type="text/javascript" charset="utf-8" ></script>
+	<script src="./modules/myHobbies/myHobbiesCntrl.js" type="text/javascript" charset="utf-8" ></script>
 </head>
 <body ng-app="globalMod">
 	<div ng-controller="globalCntrl as global" class="container-fluid">
@@ -33,10 +36,10 @@
 		</div>
 		<!-- <a ui-sref="aboutMe">About Me</a> -->
 		<div class="stickyTab">
-			<div class="stickyNote aboutMe" ng-click="global.headerColor('#c9f1e8')">About Me</div>
-			<div class="stickyNote mySkills" ng-click="global.headerColor('#2ca4ee')">My Skills</div>
-			<div class="stickyNote portfolio" ng-click="global.headerColor('#9924ae')">Portfolio</div>
-			<div class="stickyNote myHobbies" ng-click="global.headerColor('#eea4be')">Hobbies</div>
+			<div class="stickyNote aboutMe" ng-click="global.headerColor('#c9f1e8')" ui-sref="aboutMe">About Me</div>
+			<div class="stickyNote mySkills" ng-click="global.headerColor('#2ca4ee')" ui-sref="skills">My Skills</div>
+			<div class="stickyNote portfolio" ng-click="global.headerColor('#9924ae')" ui-sref="portfolio">Portfolio</div>
+			<div class="stickyNote myHobbies" ng-click="global.headerColor('#eea4be')" ui-sref="hobbies">Hobbies</div>
 		</div>
 		<ui-view></ui-view>
 	</div>

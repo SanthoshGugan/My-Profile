@@ -8,28 +8,28 @@ globalMod.config(['$stateProvider','$urlRouterProvider', function($stateProvider
 		name: 'aboutMe',
 		url: 'about-me',
 		templateUrl: './modules/aboutMe/aboutMe.html',
-		controller: './modules/aboutMe/aboutMeCntrl'
+		controller: 'aboutMeCntrl'
 	};
 
 	var mySkillsState = {
 		name: 'skills',
 		url: 'my-skills',
 		templateUrl: './modules/mySkills/mySkills.html',
-		controller: './modules/mySkills/mySkillsCntrl'
+		controller: 'mySkillsCntrl'
 	};
 
 	var myPortfolioState = {
 		name: 'portfolio',
 		url: 'my-portfolio',
-		templateUrl: './modules/mySkills/myPortfolio.html',
-		controller: './modules/mySkills/myPortfolioCntrl'
+		templateUrl: './modules/myPortfolio/myPortfolio.html',
+		controller: 'myPortfolioCntrl'
 	};
 
 	var myHobbiesState = {
 		name: 'hobbies',
 		url: 'my-hobbies',
-		templateUrl: './modules/mySkills/myHobbies.html',
-		controller: './modules/mySkills/myHobbiesCntrl'
+		templateUrl: './modules/myHobbies/myHobbies.html',
+		controller: 'myHobbiesCntrl'
 	};	
 	$stateProvider.state(aboutMeState);
 	$stateProvider.state(mySkillsState);

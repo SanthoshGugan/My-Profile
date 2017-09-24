@@ -1,0 +1,3 @@
+globalMod.controller('aboutMeCntrl', [function(){
+	
+}])
