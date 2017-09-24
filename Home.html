@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>My Profile</title>
+
+	<!-- JQUERY -->
+	<script src="./libs/jquery/jquery-3.2.1.js" type="text/javascript" charset="utf-8" ></script>
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="./libs/bootstrap/css/bootstrap.css">
+	<script src="./libs/bootstrap/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+
+	<!-- AngularJS 1.5.x -->
+	<script src="./libs/angularJS/angular.min.js" type="text/javascript" charset="utf-8"></script>
+
+	<!-- Controllers -->
+	<script src="./globalCntrl.js" type="text/javascript" charset="utf-8" ></script>
+</head>
+<body ng-app="globalMod">
+	<div ng-controller="globalCntrl as global" class="container-fluid">
+		<div class="text-center">
+			{{global.welcome}}
+		</div>
+	</div>
+	
+</body>
+</html>
