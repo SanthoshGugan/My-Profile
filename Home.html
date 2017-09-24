@@ -15,14 +15,20 @@
 	<!-- AngularJS 1.5.x -->
 	<script src="./libs/angularJS/angular.min.js" type="text/javascript" charset="utf-8"></script>
 
+	<!-- Angular UI router -->
+	<script src="./libs/angularJS/angular-ui-router.min.js" type="text/javascript" charset="utf-8"></script>
+
 	<!-- Controllers -->
 	<script src="./globalCntrl.js" type="text/javascript" charset="utf-8" ></script>
+	<script src="./modules/aboutMe/aboutMeCntrl.js" type="text/javascript" charset="utf-8" ></script>
 </head>
 <body ng-app="globalMod">
 	<div ng-controller="globalCntrl as global" class="container-fluid">
 		<div class="text-center">
 			{{global.welcome}}
 		</div>
+		<a ui-sref="aboutMe">About Me</a>
+		<ui-view></ui-view>
 	</div>
 	
 </body>
