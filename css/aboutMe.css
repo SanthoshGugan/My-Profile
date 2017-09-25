@@ -1,0 +1,31 @@
+.aboutMe{
+	padding: 35px 0 0 0;
+}
+
+.profile_dp{
+	height: 150px;
+	width: 150px;
+	border-radius: 100px;
+	border: 2px solid black;
+}
+
+.profile_dp img{
+	overflow: hidden;
+    position: absolute;
+    left: 0px;
+    top: -10px;
+}
+.hovereffect{
+	position: relative;
+	overflow: hidden;
+}
+
+.hovereffect .overlay{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	overflow: hidden;
+	opacity: 0;
+	top: 0;
+	left: 0;
+}
