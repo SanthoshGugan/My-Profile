@@ -7,6 +7,7 @@
 	width: 150px;
 	border-radius: 100px;
 	border: 2px solid black;
+	z-index: 10;
 }
 
 .profile_dp img{
@@ -14,6 +15,10 @@
     position: absolute;
     left: 0px;
     top: -10px;
+    transition: all 1s;
+}
+.profile_dp:hover img{
+	transform: scale(1.1);
 }
 .hovereffect{
 	position: relative;
@@ -26,6 +31,44 @@
 	position: absolute;
 	overflow: hidden;
 	opacity: 0;
-	top: 0;
+	top: 110px;
 	left: 0;
+}
+
+.overlay .nameTag{
+	padding: 20px 52px;
+    background-color: #f7e312;
+    opacity: 0;
+    font-size: 25px;
+    color: #1648dc;
+}
+
+.hovereffect:hover .overlay{
+	opacity: 0.75;
+}
+
+.hovereffect:hover .overlay .nameTag{
+	opacity: 0.75;
+}
+
+.goldenGlow:hover{
+	box-shadow: 1px 0px 50px #f7e312;
+
+}
+
+/*Modal*/
+.closeModal{
+	    position: absolute;
+    right: 20px;
+    border-radius: 50px;
+    border: 2px solid white;
+    width: 20px;
+    height: 20px;
+    top: 20px;
+}
+
+.closeModal i{
+	position: relative;
+    left: 2px;
+    bottom: 2px;
 }
