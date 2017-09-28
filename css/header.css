@@ -1,3 +1,4 @@
+
 .myName{
 	padding: 20px;
 	font-size: 25px;
@@ -18,8 +19,12 @@
     margin: 10px 0 10px -60px;
     width: 140px;
     text-align: right;
+    box-shadow: 0px 0px 10px #000;
 }
 
+.stickyTab .stickyNote:hover{
+	box-shadow: 0px 5px 20px #000;
+}
 
 .stickyTab .stickyNote.aboutMe{
 	background-color: #c9f1e8;

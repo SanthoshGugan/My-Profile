@@ -72,3 +72,67 @@
     left: 2px;
     bottom: 2px;
 }
+
+/*Info*/
+.info{
+	float: none;
+	margin: 0 auto;
+}
+
+/*Social Footer*/
+.socialFooter{
+	padding: 50px 0;
+}
+.socialIcon{
+	padding: 10px;
+    display: inline-table;
+    min-width: 40px;
+}
+.socialFooter .socialIcon.fb{
+	background-color: #3b5998;
+}
+
+.socialFooter .socialIcon.twt{
+	background-color: #0084b4;
+}
+
+.socialFooter .socialIcon.gp{
+	background-color: #d34836;
+}
+
+.socialFooter .socialIcon.ph{
+	background-color: #e219a7;
+}
+
+.socialFooter .socialIcon.mail{
+	background-color: #2cbd18;
+}
+
+.socialIcon a{
+	text-decoration: none;
+}
+.socialIcon i{
+	display: table-cell;
+	color: white;
+	transition: all 0.5s;
+}
+
+.socialIcon.fb:hover{
+	box-shadow: 0px 0px 25px #3b5998;
+}
+.socialIcon.twt:hover{
+	box-shadow: 0px 0px 25px #0084b4;
+}
+.socialIcon.ph:hover{
+	box-shadow: 0px 0px 25px #e219a7;
+}
+.socialIcon.mail:hover{
+	box-shadow: 0px 0px 25px #2cbd18;
+}
+.socialIcon.gp:hover{
+	box-shadow: 0px 0px 25px #d34836;
+}
+.socialIcon:hover i{
+	color: #ccc;	
+	transform: rotate(15deg);
+}
